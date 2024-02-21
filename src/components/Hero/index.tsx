@@ -3,15 +3,18 @@ import { MapPin } from 'lucide-react'
 export function Hero() {
   return (
     <section id="hero">
-      <h1 className="text-5xl font-extrabold italic">Aurino Junior</h1>
+      <h1 className="text-5xl font-extrabold italic text-sky-500 dark:text-white">
+        Aurino Junior
+      </h1>
       <h2
         className="
             mt-8
             animate-typing overflow-hidden whitespace-nowrap
-            bg-gradient-to-r from-sky-500 from-10% via-white via-30% to-transparent to-90%
+            bg-gradient-to-r from-sky-500 from-10% via-violet-500 via-30% to-transparent to-90%
             bg-clip-text
             text-2xl
             font-bold text-transparent
+            dark:via-white
           "
       >
         Frontend developer
