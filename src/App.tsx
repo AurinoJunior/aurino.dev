@@ -3,7 +3,7 @@ import { ToggleTheme } from './components/Theme/ToggleTheme'
 
 export function App() {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="auridev-theme">
+    <ThemeProvider>
       <h1>Nice</h1>
       <ToggleTheme />
     </ThemeProvider>
