@@ -1,20 +1,43 @@
-export function WorkCard() {
+interface IWorkCardProps {
+  title: string
+  tag: string
+  workTime: string
+  description: string
+  role: string
+  link: string
+}
+
+export function WorkCard({
+  title,
+  tag,
+  description,
+  role,
+  workTime,
+  link
+}: IWorkCardProps) {
   return (
-    <div className="mt-4 rounded-lg p-6 hover:bg-slate-900">
+    <a
+      href={link}
+      target="_blank"
+      className="mt-4 block cursor-pointer rounded-lg p-6 hover:bg-slate-900"
+      rel="noreferrer"
+    >
       <div className="flex items-center gap-4">
-        <h3 className="text-2xl font-bold">88 Pixels</h3>
-        <div className="rounded-md bg-slate-500 px-2 py-1 text-sm">
-          2021 - 2023
-        </div>
+        <h3 className="text-2xl font-bold">{title}</h3>
+
+        {tag && (
+          <div className="rounded-md bg-slate-500 px-2 py-1 text-sm font-bold">
+            {tag}
+          </div>
+        )}
       </div>
 
-      <p className="mt-4 text-slate-400">
-        Atuando no time de growth criando e mantendo paginas web para aquisição
-        de novos clientes.
-      </p>
-      <p className="mt-4 text-lg italic text-sky-500">
-        Desenvolvedor Front-end
-      </p>
-    </div>
+      <p className="mt-4 text-slate-400">{description}</p>
+
+      <div className="flex items-end justify-between">
+        <p className="mt-4 text-lg italic text-sky-500">{role}</p>
+        <p className="text-md mt-4 text-slate-500">{workTime}</p>
+      </div>
+    </a>
   )
 }

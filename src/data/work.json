@@ -1,0 +1,29 @@
+{
+  "title": "Empresas que trabalhei",
+  "companies": [
+    {
+      "name": "MB Labs",
+      "description": "Atuando no projeto de restruturação do site do Cinemark Brasil",
+      "tag": "atual",
+      "work_time": "out de 2023",
+      "role": "Frontend developer",
+      "link": "https://mblabs.com.br/"
+    },
+    {
+      "name": "GetNinjas",
+      "description": "Atuando no time de growth criando e mantendo paginas web para aquisição de novos clientes.",
+      "tag": "",
+      "work_time": "nov de 2020 - mai de 2023",
+      "role": "Frontend developer",
+      "link": "https://www.getninjas.com.br/"
+    },
+    {
+      "name": "Catho online",
+      "description": "Responsável pela área logada do candidato no perido de 2 anos e 10 meses.",
+      "tag": "",
+      "work_time": "fev de 2018 - dez de 2019",
+      "role": "Fullstack developer",
+      "link": "https://www.catho.com.br/"
+    }
+  ]
+}

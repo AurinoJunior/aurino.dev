@@ -1,10 +1,17 @@
 import { MapPin } from 'lucide-react'
 
+import heroData from '@/data/hero.json'
+
 export function Hero() {
+  const randomPhrase =
+    heroData.phrase_animation[
+      Math.floor(Math.random() * heroData.phrase_animation.length)
+    ]
+
   return (
     <section id="hero">
       <h1 className="text-5xl font-black italic text-sky-500 dark:text-white">
-        Aurino Junior
+        {heroData.title}
       </h1>
       <h2
         className="
@@ -17,19 +24,15 @@ export function Hero() {
             dark:via-white
           "
       >
-        Frontend developer
+        {randomPhrase}
       </h2>
 
-      <p className="mt-8 text-lg text-slate-400">
-        Olá meu nome é Aurino Junior, sou formado em ciência da computação e
-        trabalho como desenvolvedor de software Frontend. Aproveite para me
-        conhecer melhor na seção sobre ou ver meus projetos.
-      </p>
+      <p className="mt-8 text-lg text-slate-400">{heroData.description}</p>
 
       <div className="flex justify-between">
         <div className="mt-8 flex items-center gap-2 text-slate-500">
           <MapPin size={18} />
-          <p>São Paulo - SP, Brasil</p>
+          <p>{heroData.locale}</p>
         </div>
 
         <div className="mt-8 flex items-center gap-2 text-slate-500">
@@ -37,7 +40,7 @@ export function Hero() {
             <span className="absolute h-full w-full animate-ping rounded-full bg-lime-500"></span>
             <span className="h-3 w-3 rounded-full bg-lime-500"></span>
           </span>
-          <p>Open to work</p>
+          <p>{heroData.status}</p>
         </div>
       </div>
     </section>
