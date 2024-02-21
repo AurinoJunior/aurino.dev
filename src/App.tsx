@@ -1,3 +1,11 @@
+import { ThemeProvider } from './components/Theme/ThemeProvider'
+import { ToggleTheme } from './components/Theme/ToggleTheme'
+
 export function App() {
-  return <h1>Nice</h1>
+  return (
+    <ThemeProvider>
+      <h1>Nice</h1>
+      <ToggleTheme />
+    </ThemeProvider>
+  )
 }
