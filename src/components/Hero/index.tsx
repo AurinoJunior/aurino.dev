@@ -3,7 +3,7 @@ import { MapPin } from 'lucide-react'
 export function Hero() {
   return (
     <section id="hero">
-      <h1 className="text-5xl font-extrabold italic text-sky-500 dark:text-white">
+      <h1 className="text-5xl font-black italic text-sky-500 dark:text-white">
         Aurino Junior
       </h1>
       <h2
@@ -19,11 +19,13 @@ export function Hero() {
       >
         Frontend developer
       </h2>
+
       <p className="mt-8 text-lg text-slate-400">
         Olá meu nome é Aurino Junior, sou formado em ciência da computação e
         trabalho como desenvolvedor de software Frontend. Aproveite para me
         conhecer melhor na seção sobre ou ver meus projetos.
       </p>
+
       <div className="flex justify-between">
         <div className="mt-8 flex items-center gap-2 text-slate-500">
           <MapPin size={18} />

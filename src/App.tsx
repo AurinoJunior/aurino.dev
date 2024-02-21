@@ -1,15 +1,12 @@
 import { Container } from './components/ui/Container'
 import { Hero } from './components/Hero'
-import { ThemeProvider } from './components/Theme/ThemeProvider'
-import { ToggleTheme } from './components/Theme/ToggleTheme'
+import { Work } from './components/Work'
 
 export function App() {
   return (
-    <ThemeProvider>
-      <ToggleTheme />
-      <Container>
-        <Hero />
-      </Container>
-    </ThemeProvider>
+    <Container>
+      <Hero />
+      <Work />
+    </Container>
   )
 }
