@@ -7,10 +7,15 @@ import {
   DropdownMenuTrigger
 } from '../ui/dropdown-menu'
 
+import menuData from '@/data/menu.json'
+
 export function Header() {
   return (
     <header className="fixed top-0 z-10 w-full p-4 backdrop-blur-md">
-      <a href="#hero" className="block w-full text-center text-2xl font-black">
+      <a
+        href={menuData.logo_link}
+        className="block w-full text-center text-2xl font-black"
+      >
         aurino<span className="text-sky-500">.dev</span>
       </a>
 
@@ -21,18 +26,11 @@ export function Header() {
           </DropdownMenuTrigger>
 
           <DropdownMenuContent>
-            <DropdownMenuItem className="cursor-pointer">
-              <a href="#hero">Inicio</a>
-            </DropdownMenuItem>
-            <DropdownMenuItem className="cursor-pointer">
-              <a href="#work">Empresas</a>
-            </DropdownMenuItem>
-            <DropdownMenuItem className="cursor-pointer">
-              <a href="#about">Sobre</a>
-            </DropdownMenuItem>
-            <DropdownMenuItem className="cursor-pointer">
-              <a href="#contact">Contatos</a>
-            </DropdownMenuItem>
+            {menuData.items.map((m) => (
+              <DropdownMenuItem className="cursor-pointer" key={m.name}>
+                <a href={m.link}>{m.name}</a>
+              </DropdownMenuItem>
+            ))}
           </DropdownMenuContent>
         </DropdownMenu>
 
