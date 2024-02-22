@@ -10,7 +10,7 @@ import {
 export function Header() {
   return (
     <header className="fixed top-0 z-10 w-full p-4 backdrop-blur-md">
-      <a href="/" className="block w-full text-center text-2xl font-black">
+      <a href="#hero" className="block w-full text-center text-2xl font-black">
         aurino<span className="text-sky-500">.dev</span>
       </a>
 
@@ -22,14 +22,16 @@ export function Header() {
 
           <DropdownMenuContent>
             <DropdownMenuItem className="cursor-pointer">
-              Profile
+              <a href="#hero">Inicio</a>
             </DropdownMenuItem>
             <DropdownMenuItem className="cursor-pointer">
-              Billing
+              <a href="#work">Empresas</a>
             </DropdownMenuItem>
-            <DropdownMenuItem className="cursor-pointer">Team</DropdownMenuItem>
             <DropdownMenuItem className="cursor-pointer">
-              Subscription
+              <a href="#about">Sobre</a>
+            </DropdownMenuItem>
+            <DropdownMenuItem className="cursor-pointer">
+              <a href="#contact">Contatos</a>
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>

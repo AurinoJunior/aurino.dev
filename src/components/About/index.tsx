@@ -2,7 +2,7 @@ import { Brush } from 'lucide-react'
 
 export function About() {
   return (
-    <section id="about" className="mt-24">
+    <section id="about" className="pt-24">
       <h2 className="text-3xl font-bold italic">Sobre</h2>
 
       <p className="mt-4 text-slate-400">

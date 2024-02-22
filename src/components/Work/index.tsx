@@ -3,7 +3,7 @@ import workData from '@/data/work.json'
 
 export function Work() {
   return (
-    <section id="work" className="mt-24">
+    <section id="work" className="pt-24">
       <h2 className="text-3xl font-bold italic">{workData.title}</h2>
 
       {workData.companies.map((companie) => (

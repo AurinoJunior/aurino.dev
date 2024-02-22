@@ -9,7 +9,7 @@ export function Hero() {
     ]
 
   return (
-    <section id="hero">
+    <section id="hero" className="pt-32">
       <h1 className="text-5xl font-black italic text-sky-500 dark:text-white">
         {heroData.title}
       </h1>
