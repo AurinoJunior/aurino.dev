@@ -19,7 +19,7 @@ export function WorkCard({
     <a
       href={link}
       target="_blank"
-      className="mt-4 block cursor-pointer rounded-lg p-6 hover:bg-slate-900"
+      className="block cursor-pointer rounded-lg p-6 hover:bg-slate-900"
       rel="noreferrer"
     >
       <div className="flex items-center gap-4">
