@@ -6,7 +6,7 @@ interface IContainerProps {
 
 export function Container({ children }: IContainerProps) {
   return (
-    <div className="mx-auto mt-20 max-w-[80%] xl:max-w-[40%] 2xl:max-w-[30%]">
+    <div className="mx-auto mt-32 max-w-[80%] xl:max-w-[40%] 2xl:max-w-[30%]">
       {children}
     </div>
   )
