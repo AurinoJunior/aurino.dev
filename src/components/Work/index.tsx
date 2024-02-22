@@ -17,7 +17,6 @@ export function Work() {
           role={companie.role}
           workTime={companie.work_time}
           link={companie.link}
-          linkColor={companie.link_color}
         />
       ))}
     </section>

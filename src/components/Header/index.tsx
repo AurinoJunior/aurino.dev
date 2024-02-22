@@ -23,15 +23,17 @@ export function Header() {
         <ToggleTheme />
 
         <DropdownMenu>
-          <DropdownMenuTrigger className="flex h-10 w-10 items-center justify-center rounded-md border">
+          <DropdownMenuTrigger className="flex h-10 w-10 items-center justify-center rounded-md border hover:brightness-75">
             <Menu size={24} />
           </DropdownMenuTrigger>
 
           <DropdownMenuContent className="mr-4 lg:mr-6">
             {menuData.items.map((m) => (
-              <DropdownMenuItem className="cursor-pointer" key={m.name}>
-                <a href={m.link}>{m.name}</a>
-              </DropdownMenuItem>
+              <a href={m.link} key={m.name}>
+                <DropdownMenuItem className="cursor-pointer">
+                  {m.name}
+                </DropdownMenuItem>
+              </a>
             ))}
           </DropdownMenuContent>
         </DropdownMenu>

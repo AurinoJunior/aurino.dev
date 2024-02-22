@@ -37,7 +37,7 @@ export function ContactItem({ name, user, link }: IContactItemProps) {
     <a
       href={link}
       target="_blank"
-      className="group/item relative flex cursor-pointer items-center gap-4 rounded-lg p-2 hover:bg-slate-900 md:p-4"
+      className="group/item relative flex cursor-pointer items-center gap-4 rounded-lg p-2 hover:bg-slate-100 dark:hover:bg-slate-900 md:p-4"
       rel="noreferrer"
     >
       <div className="flex h-12 w-12 items-center justify-center rounded-md bg-black dark:bg-white">
