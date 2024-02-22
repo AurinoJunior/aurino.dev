@@ -1,4 +1,4 @@
-import { ContactItem } from './ContactItem'
+import { ContactItem } from './ContactCards'
 
 import contactData from '@/data/contact.json'
 
