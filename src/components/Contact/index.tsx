@@ -9,7 +9,7 @@ export function Contact() {
         {contactData.title}
       </h2>
 
-      <div className="mt-4 grid grid-cols-1 gap-2 md:mt-8 md:grid-cols-1">
+      <div className="mt-4 grid grid-cols-1 gap-2 md:mt-8 md:grid-cols-2">
         {contactData.contacts.map((contact) => (
           <ContactItem
             key={contact.name}

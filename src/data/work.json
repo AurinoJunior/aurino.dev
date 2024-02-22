@@ -7,7 +7,8 @@
       "tag": "atual",
       "work_time": "out de 2023",
       "role": "Frontend developer",
-      "link": "https://mblabs.com.br/"
+      "link": "https://mblabs.com.br/",
+      "link_color": "text-pink-600"
     },
     {
       "name": "GetNinjas",
@@ -15,7 +16,8 @@
       "tag": "",
       "work_time": "nov de 2020 - mai de 2023",
       "role": "Frontend developer",
-      "link": "https://www.getninjas.com.br/"
+      "link": "https://www.getninjas.com.br/",
+      "link_color": "text-yellow-500"
     },
     {
       "name": "Catho",
@@ -23,7 +25,8 @@
       "tag": "",
       "work_time": "fev de 2018 - dez de 2019",
       "role": "Fullstack developer",
-      "link": "https://www.catho.com.br/"
+      "link": "https://www.catho.com.br/",
+      "link_color": "text-sky-500"
     }
   ]
 }

@@ -5,6 +5,7 @@ interface IWorkCardProps {
   description: string
   role: string
   link: string
+  linkColor: string
 }
 
 export function WorkCard({
@@ -13,17 +14,20 @@ export function WorkCard({
   description,
   role,
   workTime,
-  link
+  link,
+  linkColor
 }: IWorkCardProps) {
   return (
-    <a
-      href={link}
-      target="_blank"
-      className="mt-4 block cursor-pointer rounded-lg p-2 hover:bg-slate-900 md:p-6"
-      rel="noreferrer"
-    >
+    <div className="mt-4 p-2 md:p-6">
       <div className="flex items-center gap-4">
-        <h3 className="text-lg font-bold md:text-xl">{title}</h3>
+        <a
+          href={link}
+          target="_blank"
+          className={`cursor-pointer text-lg font-bold  underline md:text-xl ${linkColor} hover:brightness-75`}
+          rel="noreferrer"
+        >
+          {title}
+        </a>
 
         {tag && (
           <div className="rounded-md bg-slate-500 px-2 py-0.5 text-sm font-bold md:py-1">
@@ -35,9 +39,9 @@ export function WorkCard({
       <p className="mt-4 text-slate-400">{description}</p>
 
       <div className="mt-4 flex flex-col items-start justify-between md:flex-row md:items-end">
-        <p className="text-md text-sky-500 md:text-lg">{role}</p>
+        <p className="text-md text-white md:text-lg">{role}</p>
         <p className="text-md italic text-slate-500">{workTime}</p>
       </div>
-    </a>
+    </div>
   )
 }

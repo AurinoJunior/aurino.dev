@@ -23,7 +23,7 @@ export function About() {
       <p className="mt-4 text-slate-400">{aboutData.others}</p>
       {aboutData.others_items.map((item) => (
         <a
-          className="ml-2 mt-4 flex w-fit cursor-pointer items-center gap-2 underline decoration-1 hover:text-pink-500"
+          className="ml-2 mt-4 flex w-fit cursor-pointer items-center gap-2 underline decoration-1 transition hover:text-pink-500"
           target="_blank"
           key={item.id}
           href={item.link}
