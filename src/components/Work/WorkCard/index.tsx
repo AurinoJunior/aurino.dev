@@ -30,17 +30,19 @@ export function WorkCard({
         </a>
 
         {tag && (
-          <div className="rounded-md bg-slate-500 px-2 py-0.5 text-sm font-bold md:py-1">
+          <div className="rounded-md bg-slate-500 px-2 py-0.5 text-sm font-bold text-white  md:py-1">
             {tag}
           </div>
         )}
       </div>
 
-      <p className="mt-4 text-slate-400">{description}</p>
+      <p className="mt-4 text-slate-500 dark:text-slate-400">{description}</p>
 
       <div className="mt-4 flex flex-col items-start justify-between md:flex-row md:items-end">
-        <p className="text-md text-white md:text-lg">{role}</p>
-        <p className="text-md italic text-slate-500">{workTime}</p>
+        <p className="text-md md:text-lg">{role}</p>
+        <p className="text-md italic text-slate-400 dark:text-slate-500">
+          {workTime}
+        </p>
       </div>
     </div>
   )

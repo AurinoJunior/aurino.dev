@@ -15,12 +15,14 @@ export function About() {
         {aboutData.title}
       </h2>
       {aboutData.paragraphs.map((text, i) => (
-        <p className="mt-4 text-slate-400" key={i}>
+        <p className="mt-4 text-slate-500 dark:text-slate-400" key={i}>
           {text}
         </p>
       ))}
 
-      <p className="mt-4 text-slate-400">{aboutData.others}</p>
+      <p className="mt-4 text-slate-500 dark:text-slate-400">
+        {aboutData.others}
+      </p>
       {aboutData.others_items.map((item) => (
         <a
           className="ml-2 mt-4 flex w-fit cursor-pointer items-center gap-2 underline decoration-1 transition hover:text-pink-500"
@@ -34,7 +36,7 @@ export function About() {
         </a>
       ))}
 
-      <div className="mt-8 italic text-slate-500">
+      <div className="mt-8 italic text-slate-400 dark:text-slate-500">
         <p>{aboutData.quote}</p>
         <p className="ml-2 mt-2">{aboutData.quote_author}</p>
       </div>

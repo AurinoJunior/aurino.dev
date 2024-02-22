@@ -28,17 +28,17 @@ export function Hero() {
         {randomPhrase}
       </h2>
 
-      <p className="text-md mt-8 text-slate-400 md:text-lg">
+      <p className="text-md mt-8 text-slate-500 dark:text-slate-400 md:text-lg">
         {heroData.description}
       </p>
 
-      <div className="mt-8 flex flex-col justify-between md:flex-row">
-        <div className="flex items-center gap-2 text-slate-500">
+      <div className="mt-8 flex flex-col justify-between text-slate-400 dark:text-slate-500 md:flex-row">
+        <div className="flex items-center gap-2">
           <MapPin size={18} />
           <p>{heroData.locale}</p>
         </div>
 
-        <div className="mt-4 flex items-center gap-2 text-slate-500 md:mt-0">
+        <div className="mt-4 flex items-center gap-2 md:mt-0">
           <span className="relative flex h-3 w-3">
             <span className="absolute h-full w-full animate-ping rounded-full bg-lime-500"></span>
             <span className="h-3 w-3 rounded-full bg-lime-500"></span>
