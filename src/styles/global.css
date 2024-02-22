@@ -70,6 +70,20 @@
   * {
     @apply border-border;
   }
+
+  html {
+    scroll-behavior: smooth;
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: rgb(126, 126, 126);
+      border-radius: 5px;
+    }
+  }
+
   body {
     @apply bg-background text-foreground;
   }

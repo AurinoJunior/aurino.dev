@@ -12,9 +12,20 @@ export function ToggleTheme() {
   }
 
   return (
-    <Button variant="outline" size="icon" onClick={handleSwitchTheme}>
-      <Sun className="h-[1.2rem] w-[1.2rem] transition-all opacity-100 dark:opacity-0" />
-      <Moon className="absolute h-[1.2rem] w-[1.2rem] transition-all opacity-0 dark:opacity-100" />
+    <Button
+      className="border-none"
+      variant="outline"
+      size="icon"
+      onClick={handleSwitchTheme}
+    >
+      <Moon
+        className="h-[1.2rem] w-[1.2rem] opacity-100 transition-all dark:opacity-0"
+        fill="black"
+      />
+      <Sun
+        className="absolute h-[1.2rem] w-[1.2rem] opacity-0 transition-all dark:opacity-100"
+        fill="white"
+      />
     </Button>
   )
 }
