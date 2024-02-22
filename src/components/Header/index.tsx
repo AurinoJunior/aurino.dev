@@ -14,12 +14,12 @@ export function Header() {
     <header className="fixed top-0 z-10 w-full p-4 backdrop-blur-md">
       <a
         href={menuData.logo_link}
-        className="block w-full text-center text-2xl font-black"
+        className="block w-full text-2xl font-black lg:text-center"
       >
         aurino<span className="text-sky-500">.dev</span>
       </a>
 
-      <div className="absolute right-6 top-4 z-10 flex items-center gap-2">
+      <div className="absolute right-4 top-4 z-10 flex items-center gap-2 lg:right-6">
         <DropdownMenu>
           <DropdownMenuTrigger className="flex h-10 w-10 items-center justify-center rounded-md bg-slate-950">
             <Menu size={24} />

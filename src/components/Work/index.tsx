@@ -4,7 +4,9 @@ import workData from '@/data/work.json'
 export function Work() {
   return (
     <section id="work" className="pt-24">
-      <h2 className="mb-4 text-3xl font-bold italic">{workData.title}</h2>
+      <h2 className="mb-4 text-2xl font-bold italic md:text-3xl">
+        {workData.title}
+      </h2>
 
       {workData.companies.map((companie) => (
         <WorkCard

@@ -10,7 +10,7 @@ export function Hero() {
 
   return (
     <section id="hero" className="pt-32">
-      <h1 className="text-5xl font-black italic text-sky-500 dark:text-white">
+      <h1 className="text-4xl font-black italic text-sky-500 dark:text-white md:text-5xl">
         {heroData.title}
       </h1>
       <h2
@@ -19,23 +19,26 @@ export function Hero() {
             animate-typing overflow-hidden whitespace-nowrap
             bg-gradient-to-r from-sky-500 from-10% via-violet-500 via-30% to-transparent to-90%
             bg-clip-text
-            text-2xl
+            text-xl
             font-bold text-transparent
             dark:via-white
+            md:text-2xl
           "
       >
         {randomPhrase}
       </h2>
 
-      <p className="mt-8 text-lg text-slate-400">{heroData.description}</p>
+      <p className="text-md mt-8 text-slate-400 md:text-lg">
+        {heroData.description}
+      </p>
 
-      <div className="flex justify-between">
-        <div className="mt-8 flex items-center gap-2 text-slate-500">
+      <div className="mt-8 flex flex-col justify-between md:flex-row">
+        <div className="flex items-center gap-2 text-slate-500">
           <MapPin size={18} />
           <p>{heroData.locale}</p>
         </div>
 
-        <div className="mt-8 flex items-center gap-2 text-slate-500">
+        <div className="mt-4 flex items-center gap-2 text-slate-500 md:mt-0">
           <span className="relative flex h-3 w-3">
             <span className="absolute h-full w-full animate-ping rounded-full bg-lime-500"></span>
             <span className="h-3 w-3 rounded-full bg-lime-500"></span>

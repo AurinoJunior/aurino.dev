@@ -19,14 +19,14 @@ export function WorkCard({
     <a
       href={link}
       target="_blank"
-      className="block cursor-pointer rounded-lg p-6 hover:bg-slate-900"
+      className="mt-4 block cursor-pointer rounded-lg p-2 hover:bg-slate-900 md:p-6"
       rel="noreferrer"
     >
       <div className="flex items-center gap-4">
-        <h3 className="text-xl font-bold">{title}</h3>
+        <h3 className="text-lg font-bold md:text-xl">{title}</h3>
 
         {tag && (
-          <div className="rounded-md bg-slate-500 px-2 py-1 text-sm font-bold">
+          <div className="rounded-md bg-slate-500 px-2 py-0.5 text-sm font-bold md:py-1">
             {tag}
           </div>
         )}
@@ -34,9 +34,9 @@ export function WorkCard({
 
       <p className="mt-4 text-slate-400">{description}</p>
 
-      <div className="flex items-end justify-between">
-        <p className="mt-4 text-lg italic text-sky-500">{role}</p>
-        <p className="text-md mt-4 text-slate-500">{workTime}</p>
+      <div className="mt-4 flex flex-col items-start justify-between md:flex-row md:items-end">
+        <p className="text-md text-sky-500 md:text-lg">{role}</p>
+        <p className="text-md italic text-slate-500">{workTime}</p>
       </div>
     </a>
   )
