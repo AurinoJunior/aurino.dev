@@ -20,12 +20,14 @@ export function Header() {
       </a>
 
       <div className="absolute right-4 top-4 z-10 flex items-center gap-2 lg:right-6">
+        <ToggleTheme />
+
         <DropdownMenu>
-          <DropdownMenuTrigger className="flex h-10 w-10 items-center justify-center rounded-md bg-slate-950">
+          <DropdownMenuTrigger className="flex h-10 w-10 items-center justify-center rounded-md border">
             <Menu size={24} />
           </DropdownMenuTrigger>
 
-          <DropdownMenuContent>
+          <DropdownMenuContent className="mr-4 lg:mr-6">
             {menuData.items.map((m) => (
               <DropdownMenuItem className="cursor-pointer" key={m.name}>
                 <a href={m.link}>{m.name}</a>
@@ -33,8 +35,6 @@ export function Header() {
             ))}
           </DropdownMenuContent>
         </DropdownMenu>
-
-        <ToggleTheme />
       </div>
     </header>
   )
