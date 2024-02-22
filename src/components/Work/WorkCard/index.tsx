@@ -23,7 +23,7 @@ export function WorkCard({
       rel="noreferrer"
     >
       <div className="flex items-center gap-4">
-        <h3 className="text-2xl font-bold">{title}</h3>
+        <h3 className="text-xl font-bold">{title}</h3>
 
         {tag && (
           <div className="rounded-md bg-slate-500 px-2 py-1 text-sm font-bold">
