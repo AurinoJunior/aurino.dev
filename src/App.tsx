@@ -5,6 +5,7 @@ import { About } from './components/About'
 import { Footer } from './components/Footer'
 import { Contact } from './components/Contact'
 import { Header } from './components/Header'
+import { Stack } from './components/Stack'
 
 export function App() {
   return (
@@ -14,6 +15,7 @@ export function App() {
         <Hero />
         <Work />
         <About />
+        <Stack />
         <Contact />
         <Footer />
       </Container>
