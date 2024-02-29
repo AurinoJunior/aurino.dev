@@ -1,5 +1,5 @@
 <div align="center">
-  <h3>aurino<span style="color:#0ea5e9;">.dev</span></h3>
+  <h3>aurino.dev</h3>
 </div>
 
 <p align="center">
