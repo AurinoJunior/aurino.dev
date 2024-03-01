@@ -20,10 +20,10 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    debug: true,
+    debug: false,
     fallbackLng: 'pt-BR',
     interpolation: {
-      escapeValue: false // not needed for react as it escapes by default
+      escapeValue: false
     },
     resources: {
       en: {

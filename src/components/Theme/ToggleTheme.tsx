@@ -19,12 +19,14 @@ export function ToggleTheme() {
       onClick={handleSwitchTheme}
     >
       <Moon
-        className="h-[1.2rem] w-[1.2rem] opacity-100 transition-all dark:opacity-0"
+        className="opacity-100 transition-all dark:opacity-0"
         fill="black"
+        size={20}
       />
       <Sun
-        className="absolute h-[1.2rem] w-[1.2rem] opacity-0 transition-all dark:opacity-100"
+        className="absolute opacity-0 transition-all dark:opacity-100"
         fill="white"
+        size={20}
       />
     </Button>
   )

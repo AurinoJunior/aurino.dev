@@ -8,6 +8,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger
 } from '../ui/dropdown-menu'
+import { Button } from '../ui/button'
 
 interface IMenuItemsData {
   name: string
@@ -15,10 +16,19 @@ interface IMenuItemsData {
 }
 
 export function Header() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const menuItems = t('menu.items', {
     returnObjects: true
   }) as IMenuItemsData[]
+
+  function handleChangeLanguage() {
+    const updateLang = i18n.language === 'en' ? 'pt-BR' : 'en'
+    return i18n.changeLanguage(updateLang)
+  }
+
+  function getIconLang() {
+    return i18n.language === 'en' ? '/usa.png' : '/brasil.png'
+  }
 
   return (
     <header className="fixed top-0 z-10 w-full p-4 backdrop-blur-md">
@@ -32,8 +42,12 @@ export function Header() {
       <div className="absolute right-4 top-4 z-10 flex items-center gap-2 lg:right-6">
         <ToggleTheme />
 
+        <Button size="icon" variant="ghost" onClick={handleChangeLanguage}>
+          <img src={getIconLang()} alt={i18n.language} width={25} height={25} />
+        </Button>
+
         <DropdownMenu>
-          <DropdownMenuTrigger className="flex h-10 w-10 items-center justify-center rounded-md border hover:brightness-75">
+          <DropdownMenuTrigger className="flex h-10 w-10 items-center justify-center rounded-md  hover:brightness-75">
             <Menu size={24} />
           </DropdownMenuTrigger>
 
