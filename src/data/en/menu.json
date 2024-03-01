@@ -2,19 +2,19 @@
   "logo_link": "#hero",
   "items": [
     {
-      "name": "Inicio",
+      "name": "Home",
       "link": "#hero"
     },
     {
-      "name": "Empresas",
+      "name": "Companies",
       "link": "#work"
     },
     {
-      "name": "Sobre",
+      "name": "About",
       "link": "#about"
     },
     {
-      "name": "Contatos",
+      "name": "Contact",
       "link": "#contact"
     }
   ]

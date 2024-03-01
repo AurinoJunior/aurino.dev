@@ -15,24 +15,17 @@
     {
       "title": "Back-end",
       "value": 2,
-      "skills": [
-        "NodeJs"
-      ]
+      "skills": ["NodeJs"]
     },
     {
-      "title": "Infraestrutura",
+      "title": "Infra",
       "value": 3,
-      "skills": [
-        "Docker", "AWS", "Linux"
-      ]
+      "skills": ["Docker", "AWS", "Linux"]
     },
     {
       "title": "Projeto",
       "value": 4,
-      "skills": [
-        "Scrum",
-        "Kanban"
-      ]
+      "skills": ["Scrum", "Kanban"]
     }
   ]
 }
