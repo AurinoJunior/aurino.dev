@@ -1,0 +1,20 @@
+{
+  "title": "Contacts",
+  "contacts": [
+    {
+      "name": "Github",
+      "user": "@AurinoJunior",
+      "link": "https://github.com/AurinoJunior"
+    },
+    {
+      "name": "Instagram",
+      "user": "@aurigod97",
+      "link": "https://www.instagram.com/aurigod97"
+    },
+    {
+      "name": "Linkedin",
+      "user": "@aurinojunior",
+      "link": "https://www.linkedin.com/in/aurinojunior"
+    }
+  ]
+}

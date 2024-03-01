@@ -1,0 +1,18 @@
+{
+  "title": "About",
+  "paragraphs": [
+    "I am currently a front-end web developer, I graduated in computer science in 2019 and since then I have been exploring the world of web programming, agile methodologies and devops culture",
+    "I have experience in AB testing, creating a design system, improving metrics in web core vitals and creating automated tests.",
+    "Well, I hope I can share a little of my studies with you and learn a lot during this process, let's learn together 🚀"
+  ],
+  "quote": "Never stop learning, there is always a path you don't know.",
+  "quote_author": "~~ Irelia - League of legends",
+  "others": "My other interests:",
+  "others_items": [
+    {
+      "id": "instagram",
+      "title": "Instagram of drawings",
+      "link": "https://www.instagram.com/aurigod.art"
+    }
+  ]
+}

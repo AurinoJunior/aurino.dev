@@ -1,0 +1,31 @@
+{
+  "title": "Habilidades",
+  "skillset": [
+    {
+      "title": "Front-end",
+      "value": 1,
+      "skills": [
+        "HTML",
+        "CSS",
+        "Javascript (ReactJs, NextJS)",
+        "Typescript",
+        "NextJs"
+      ]
+    },
+    {
+      "title": "Back-end",
+      "value": 2,
+      "skills": ["NodeJs"]
+    },
+    {
+      "title": "Infra",
+      "value": 3,
+      "skills": ["Docker", "AWS", "Linux"]
+    },
+    {
+      "title": "Projeto",
+      "value": 4,
+      "skills": ["Scrum", "Kanban"]
+    }
+  ]
+}

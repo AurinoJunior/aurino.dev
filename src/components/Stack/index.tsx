@@ -1,4 +1,5 @@
-import stackData from '@/data/skills.json'
+import { useTranslation } from 'react-i18next'
+
 import {
   Accordion,
   AccordionContent,
@@ -6,15 +7,26 @@ import {
   AccordionTrigger
 } from '../ui/accordion'
 
+interface ISkillsetData {
+  title: string
+  value: number
+  skills: string[]
+}
+
 export function Stack() {
+  const { t } = useTranslation()
+  const skillset = t('skills.skillset', {
+    returnObjects: true
+  }) as ISkillsetData[]
+
   return (
     <section id="section" className="pt-24">
       <h2 className="text-2xl font-bold italic md:text-3xl">
-        {stackData.title}
+        {t('skills.title')}
       </h2>
 
       <div className="mt-4">
-        {stackData.skillset.map((item) => (
+        {skillset.map((item) => (
           <Accordion key={item.value} type="single" collapsible>
             <AccordionItem value={String(item.value)}>
               <AccordionTrigger>{item.title}</AccordionTrigger>
