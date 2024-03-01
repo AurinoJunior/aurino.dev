@@ -27,7 +27,7 @@ export function Header() {
   }
 
   function getIconLang() {
-    return i18n.language === 'en' ? '/usa.png' : '/brasil.png'
+    return i18n.language === 'en' ? '/brasil.png' : '/usa.png'
   }
 
   return (
