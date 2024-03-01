@@ -1,0 +1,29 @@
+{
+  "title": "Empresas que trabalhei",
+  "companies": [
+    {
+      "name": "MB Labs",
+      "description": "Na função de consultor de desenvolvimento de software, fui um dos principais desenvolvedores frontend no projeto de reestruturação do site do Cinemark Brasil. Utilizei diversas ferramentas, como Chakra UI, Next.js e Azure Cloud, para criar uma plataforma moderna e responsiva",
+      "tag": "atual",
+      "work_time": "out de 2023",
+      "role": "Frontend developer",
+      "link": "https://mblabs.com.br/"
+    },
+    {
+      "name": "GetNinjas",
+      "description": "Como membro do time de growth, contribuí para o desenvolvimento e manutenção de páginas web voltadas para a aquisição de novos profissionais na plataforma. Também conduzi uma série de testes A/B para otimizar a performance e experiência do usuário. Participei ativamente da criação do design system, o que permitiu uma entrega mais rápida e eficiente de páginas.",
+      "tag": "",
+      "work_time": "nov de 2020 - mai de 2023",
+      "role": "Frontend developer",
+      "link": "https://www.getninjas.com.br/"
+    },
+    {
+      "name": "Catho",
+      "description": "Por 2 anos e 10 meses, trabalhei em diversas áreas da empresa. Participei do desenvolvimento do sistemas de recomendação de vagas, utilizei React para a construção da plataforma de currículos do candidato. Participei ativamente de reuniões técnicas de arquitetura e ajudei na migração do legado em PHP4 para uma arquitetura moderna baseada em micro serviços com Node.js e Express",
+      "tag": "",
+      "work_time": "fev de 2018 - dez de 2019",
+      "role": "Fullstack developer",
+      "link": "https://www.catho.com.br/"
+    }
+  ]
+}

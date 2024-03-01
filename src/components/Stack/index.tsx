@@ -1,4 +1,4 @@
-import stackData from '@/data/skills.json'
+import stackData from '@/data/pt/skills.json'
 import {
   Accordion,
   AccordionContent,

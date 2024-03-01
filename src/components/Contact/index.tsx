@@ -1,6 +1,6 @@
 import { ContactItem } from './ContactCards'
 
-import contactData from '@/data/contact.json'
+import contactData from '@/data/pt/contact.json'
 
 export function Contact() {
   return (

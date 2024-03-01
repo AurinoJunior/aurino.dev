@@ -1,6 +1,6 @@
 import { Brush } from 'lucide-react'
 
-import aboutData from '@/data/about.json'
+import aboutData from '@/data/pt/about.json'
 
 const ICONS = {
   instagram: <Brush size={18} />

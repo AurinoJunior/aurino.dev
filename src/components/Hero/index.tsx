@@ -1,17 +1,18 @@
 import { MapPin } from 'lucide-react'
-
-import heroData from '@/data/hero.json'
+import { useTranslation } from 'react-i18next'
 
 export function Hero() {
-  const randomPhrase =
-    heroData.phrase_animation[
-      Math.floor(Math.random() * heroData.phrase_animation.length)
-    ]
+  const { t } = useTranslation()
+  const phrases = t('hero.phrase_animation', {
+    returnObjects: true
+  }) as Array<string>
+
+  const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)]
 
   return (
     <section id="hero" className="pt-32">
       <h1 className="text-4xl font-black italic text-sky-500 dark:text-white md:text-5xl">
-        {heroData.title}
+        {t('hero.title')}
       </h1>
       <h2
         className="
@@ -29,13 +30,13 @@ export function Hero() {
       </h2>
 
       <p className="text-md mt-8 text-slate-500 dark:text-slate-400 md:text-lg">
-        {heroData.description}
+        {t('hero.description')}
       </p>
 
       <div className="mt-8 flex flex-col justify-between text-slate-400 dark:text-slate-500 md:flex-row">
         <div className="flex items-center gap-2">
           <MapPin size={18} />
-          <p>{heroData.locale}</p>
+          <p>{t('hero.locale')}</p>
         </div>
 
         <div className="mt-4 flex items-center gap-2 md:mt-0">
@@ -43,7 +44,7 @@ export function Hero() {
             <span className="absolute h-full w-full animate-ping rounded-full bg-lime-500"></span>
             <span className="h-3 w-3 rounded-full bg-lime-500"></span>
           </span>
-          <p>{heroData.status}</p>
+          <p>{t('hero.status')}</p>
         </div>
       </div>
     </section>

@@ -7,7 +7,7 @@ import {
   DropdownMenuTrigger
 } from '../ui/dropdown-menu'
 
-import menuData from '@/data/menu.json'
+import menuData from '@/data/pt/menu.json'
 
 export function Header() {
   return (

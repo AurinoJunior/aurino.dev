@@ -1,0 +1,21 @@
+{
+  "logo_link": "#hero",
+  "items": [
+    {
+      "name": "Inicio",
+      "link": "#hero"
+    },
+    {
+      "name": "Empresas",
+      "link": "#work"
+    },
+    {
+      "name": "Sobre",
+      "link": "#about"
+    },
+    {
+      "name": "Contatos",
+      "link": "#contact"
+    }
+  ]
+}
