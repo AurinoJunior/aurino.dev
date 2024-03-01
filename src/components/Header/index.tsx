@@ -1,4 +1,6 @@
 import { Menu } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
+
 import { ToggleTheme } from '../Theme/ToggleTheme'
 import {
   DropdownMenu,
@@ -7,13 +9,21 @@ import {
   DropdownMenuTrigger
 } from '../ui/dropdown-menu'
 
-import menuData from '@/data/pt/menu.json'
+interface IMenuItemsData {
+  name: string
+  link: string
+}
 
 export function Header() {
+  const { t } = useTranslation()
+  const menuItems = t('menu.items', {
+    returnObjects: true
+  }) as IMenuItemsData[]
+
   return (
     <header className="fixed top-0 z-10 w-full p-4 backdrop-blur-md">
       <a
-        href={menuData.logo_link}
+        href={t('menu.logo_link')}
         className="block w-full text-2xl font-black lg:text-center"
       >
         aurino<span className="text-sky-500">.dev</span>
@@ -28,7 +38,7 @@ export function Header() {
           </DropdownMenuTrigger>
 
           <DropdownMenuContent className="mr-4 lg:mr-6">
-            {menuData.items.map((m) => (
+            {menuItems.map((m) => (
               <a href={m.link} key={m.name}>
                 <DropdownMenuItem className="cursor-pointer">
                   {m.name}
