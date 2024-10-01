@@ -17,8 +17,8 @@ export function App() {
         <About />
         <Stack />
         <Contact />
-        <Footer />
       </Container>
+      <Footer />
     </>
   )
 }
