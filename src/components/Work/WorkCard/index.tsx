@@ -17,7 +17,7 @@ export function WorkCard({
 }: IWorkCardProps) {
   return (
     <div className="mt-4 p-2 md:p-6">
-      <div className="flex items-center gap-4">
+      <div className="flex items-center justify-between gap-4">
         <a
           href={link}
           target="_blank"

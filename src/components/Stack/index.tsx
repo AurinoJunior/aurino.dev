@@ -27,8 +27,13 @@ export function Stack() {
 
       <div className="mt-4">
         {skillset.map((item) => (
-          <Accordion key={item.value} type="single" collapsible>
-            <AccordionItem value={String(item.value)}>
+          <Accordion
+            className="border-b last:border-none"
+            key={item.value}
+            type="single"
+            collapsible
+          >
+            <AccordionItem className="border-none" value={String(item.value)}>
               <AccordionTrigger>{item.title}</AccordionTrigger>
               <AccordionContent className="text-sky-600">
                 {item.skills.map((s) => (
